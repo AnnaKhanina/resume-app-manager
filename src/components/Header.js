@@ -10,7 +10,6 @@ function Header() {
         <h2>Продавець-консультант</h2>
       </div>
       <div className="header-image">
-        {/* <img src="/images/anna-img.jpg" alt="Ханіна Анна Юріївна" /> */}
         <img src={myphoto} alt="Ханіна Анна Юріївна" />
       </div>
     </header>
