@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import myphoto from '../images/anna-img.jpg';
 
 function Header() {
   return (
@@ -9,7 +10,8 @@ function Header() {
         <h2>Продавець-консультант</h2>
       </div>
       <div className="header-image">
-        <img src="/images/anna-img.jpg" alt="Ханіна Анна Юріївна" />
+        {/* <img src="/images/anna-img.jpg" alt="Ханіна Анна Юріївна" /> */}
+        <img src={myphoto} alt="Ханіна Анна Юріївна" />
       </div>
     </header>
   );
