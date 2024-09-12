@@ -6,7 +6,6 @@ import {
   faMapMarkerAlt,
 } from '@fortawesome/free-solid-svg-icons';
 import { faTelegram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import myphoto from '../images/anna-img.jpg';
 
 function PersonalInfo() {
   return (
@@ -56,7 +55,6 @@ function PersonalInfo() {
       <p className="personal-info-link">
         <FontAwesomeIcon icon={faMapMarkerAlt} /> м.Хмельницький, Україна
       </p>
-      <img src={myphoto} alt="Ханіна Анна Юріївна" />
     </section>
   );
 }
