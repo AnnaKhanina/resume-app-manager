@@ -1,38 +1,253 @@
+/* Загальні стилі */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
 .App {
-  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section {
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1,
+h2,
+h3 {
+  margin-bottom: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+p {
+  margin: 5px 0;
+}
+
+.title {
+  font-size: 1.6rem;
+  color: #333;
+  letter-spacing: 0.4rem;
+}
+
+/* Стиль для header */
+.header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-bottom: solid 2px #333;
+}
+
+.header-text h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.header-text h2 {
+  font-size: 1.6rem;
+  color: #666;
+}
+
+.header-text p {
+  font-size: 1.4rem;
+  color: #666;
+}
+
+.header-image img {
+  width: 150px;
+  border-radius: 5%;
+}
+
+.main-content {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  padding: 20px; 
 }
 
-.App-link {
-  color: #61dafb;
+.left-column,
+.right-column {
+  width: 45%;
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.vertical-line {
+  width: 3px;
+  background-color: #ccc;
+  height: 100%;
+}
+
+/* Ліва колонка */
+.left-column {
+  text-align: left;
+  border-right: 2px solid #ccc;
+}
+
+.left-column p {
+  margin: 10px 0;
+}
+
+/* Права колонка */
+.right-column {
+  text-align: left;
+}
+
+.right-column ul,
+.left-column ul {
+  list-style-type: disc;
+  margin-left: 40px; 
+}
+
+.right-column li,
+.left-column li {
+  margin-bottom: 10px; 
+  font-size: 18px;
+}
+
+/* Стиль для Experience*/
+
+.experience-list {
+  margin-bottom: 16px; 
+}
+
+.experience-list-item {
+  margin-bottom: 14px;
+  font-size: 1.3rem;
+  color: #666;
+  font-weight: 700;
+}
+
+.experience-link {
+  text-decoration: none;  
+  color: #666;    
+}
+
+.experience-link:hover,
+.experience-link:focus,
+.personal-info-link:hover,
+.personal-info-link:focus {
+  color: rgb(97, 97, 253);
+}
+
+/* Education */
+
+.education-text { 
+  font-size: 18px;
+}
+
+/* PersonalInfo  */ 
+
+.personal-info-link {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 18px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.personal-info-link svg {
+  margin-right: 10px;
+  color: inherit;
+}
+
+/* Адаптивність для планшетів */
+@media (max-width: 768px) {
+  .header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+  .header-text h1 {
+    font-size: 1.75rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .header-text h2 {
+    font-size: 1.25rem;
+  }
+
+  .header-image img {
+    width: 120px;
+    margin-top: 15px;
+  }
+
+  .main-content {
+    flex-direction: column;
+  }
+
+  .right-column {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .vertical-line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    margin: 20px 0;
+  }
+ 
+  .left-column {
+    width: 100%;
+    padding: 10px;   
+    border-right: none;
+  }
+
+    .title {
+    font-size: 1.5rem;    
+    letter-spacing: 0.3rem;
+  }
+
+  .experience-list-item {
+    font-size: 1.2rem;
   }
 }
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 480px) {
+  .vertical-line {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: #ccc;
+      margin: 20px 0;
+    }
+  
+  .header-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .header-text h2 {
+    font-size: 1rem;
+  }
+
+  .header-image img {
+    width: 100px;
+  }
+
+  .title {
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .experience-list-item {     
+    font-size: 1rem;      
+  }
+
+  .right-column li,
+  .left-column li,
+  .education-text,
+  .personal-info-link {   
+    font-size: 16px;
+  }
+
+ 
+}
+
