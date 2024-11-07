@@ -14,7 +14,7 @@ function App() {
           <Experience />
         </div>
         <div className="vertical-line"></div>
-        <div className="right-column">          
+        <div className="right-column">
           <Education />
           <Skills />
         </div>
