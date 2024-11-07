@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
-import PersonalInfo from './components/PersonalInfo';
 import Experience from './components/Experience';
 import Education from './components/Education';
 import Skills from './components/Skills';
@@ -15,8 +14,7 @@ function App() {
           <Experience />
         </div>
         <div className="vertical-line"></div>
-        <div className="right-column">
-          <PersonalInfo />
+        <div className="right-column">          
           <Education />
           <Skills />
         </div>

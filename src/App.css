@@ -38,14 +38,14 @@ p {
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  gap: 16px;
   padding: 20px;
   margin-bottom: 20px;
   border-bottom: solid 2px #333;
 }
 
 .header-text h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #333;
 }
 
@@ -54,9 +54,9 @@ p {
   color: #666;
 }
 
-.header-text p {
+.header-contact {
   font-size: 1.4rem;
-  color: #666;
+  color: #333;
 }
 
 .header-image img {
@@ -133,12 +133,6 @@ p {
 .personal-info-link:hover,
 .personal-info-link:focus {
   color: rgb(97, 97, 253);
-}
-
-/* Education */
-
-.education-text { 
-  font-size: 18px;
 }
 
 /* PersonalInfo  */ 
@@ -246,8 +240,6 @@ p {
   .education-text,
   .personal-info-link {   
     font-size: 16px;
-  }
-
- 
+  } 
 }
 
