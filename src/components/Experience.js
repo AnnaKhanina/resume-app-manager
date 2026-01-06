@@ -8,12 +8,42 @@ function Experience() {
         <div className="experience-list">
           <div className="experience-list-item">
             <a
+              href="https://novaposhta.ua/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="experience-link"
+            >
+              Нова Пошта"
+            </a>
+            / м. Хмельницький / 2025-2026
+          </div>
+          <ul>
+            <li>Прийом та видача посилок клієнтам</li>
+            <li>
+              Оформлення відправлень у програмі (внесення даних, накладні)
+            </li>
+            <li>
+              Консультація клієнтів щодо тарифів, термінів доставки, правил
+              пакування
+            </li>
+            <li>Перевірка документів під час видачі відправлень</li>
+            <li>Робота з касою: прийом оплати, післяплата, ведення каси</li>
+            <li>Прийом та обробка повернень</li>
+            <li>Контроль правильності пакування та маркування посилок</li>
+            <li>Підтримка порядку на робочому місці та у відділенні</li>
+            <li>Робота зі скаргами та запитами клієнтів</li>
+            <li>Дотримання стандартів обслуговування компанії</li>
+          </ul>
+        </div>
+        <div className="experience-list">
+          <div className="experience-list-item">
+            <a
               href="https://elmir.ua/ua/"
               target="_blank"
               rel="noopener noreferrer"
               className="experience-link"
             >
-              Інтернет-магазин "Elmir"
+              Інтернет-магазин "Elmir.ua"
             </a>
             / м. Харків / 2020-2024
           </div>
@@ -42,7 +72,7 @@ function Experience() {
               rel="noopener noreferrer"
               className="experience-link"
             >
-              Інтернет-магазин "3она51"
+              Інтернет-магазин "3ona51"
             </a>
             / м. Харків / 2017-2020
           </div>
