@@ -11,7 +11,7 @@ function Header() {
       </div>
       <div className="header-text">
         <h1>Ханіна Анна Юріївна</h1>
-        <h2>Продавець-консультант</h2>
+        <h2>Менеджер з закупівель</h2>
       </div>
       <PersonalInfo />
     </header>
